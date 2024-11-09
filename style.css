@@ -1,0 +1,127 @@
+/*Reset*/
+*,
+*::before,
+*::after{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+
+}
+/*root varible*/
+:root{
+  --color-primaray:#219F95; 
+  
+  --color-navbar-: #F8F8F8;
+  --color-secodery-light:#AFCEDD;
+  --color-secondery-dark:#234894;
+  --color-heading:#1E1E1E;
+  --color-text:#696969;
+  --color-white:#FFFFFF;
+}
+/*html*/
+html{
+    font-size: 62.5%;
+}
+/*body*/
+body{
+    
+    font-size: 1.4rem;
+    line-height: 1.8;
+    width: 1336px;
+    height: 578px;
+    background-color: antiquewhite;
+}
+/*continer*/
+.continer{
+    min-width:1024;
+    margin: 0 auto;
+}
+/*heading*/
+h1,
+h2,
+h3{
+    color: var(--color-heading);
+}
+h1{
+    font-size: 2.2rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+
+
+/*header*/
+h1{
+    margin: 0 3rem 4.5rem 0;
+}
+.header--icon{
+    font-size: 1.8rem;
+    color: var(--color-secondery-dark);
+}
+.header--text{
+    font-size: 1.6rem;
+    color: var(--color-secondery-dark);
+}
+.header--data{
+    font-size: 1.2rem;
+    color: var(--color-text);
+    
+}
+.plan--header{
+    display: none;
+    grid-template-columns:1fr;
+    justify-items: space-between;
+    margin: 0 3rem 0 0;
+
+}
+/*mambership*/
+.plan--membership h2{
+    color: var(--color-heading);
+    margin:2rem 3rem 0 0;
+}
+.plan--membership p{
+    color:var(--color-text);
+    margin: 0.5rem 3rem 0 0;
+    font-size: 1.2rem;
+}
+/*reguest*/
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+.name{
+    font-size: 1.6rem;
+    color:var(--color-heading) ;
+
+}
+
+.btn{
+    font-size: 1.6rem;
+    color: var(--color-white);
+    border: 0;
+    background-color: var(--color-primaray);
+    outline: 0;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.plan--reaguest{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 4.5rem;
+   margin: 0 3rem 0 0;
+}
+@media screen and (min-width:1024px){
+    .plan--header{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        justify-items: space-between;
+        margin: 0 3rem 0 0;
+    
+    }
+}
